@@ -1,0 +1,203 @@
+/* sitewide style resets */
+/* asterick selects ALL HTML elements */
+* {
+	color: #000;
+}
+/* body element - usually just one body - margin surrounds outside of body */
+body {
+	color: #222222;
+	margin: 0;
+}
+/* 'a' selects all anchor elements */
+a {
+	color: #222222;
+	/* 'none' takes away the underline */
+	text-decoration: none;
+}
+/* targets all anchored elements (links) that can be hovered on and underlines them */
+a:hover {
+	color: #222222;
+	text-decoration: underline;
+}
+
+
+/* top section - navigation */
+/* classes that have 'nav' are targeted */
+/* always target classified elements with period in front */
+ul.nav {
+	/* all 'nav' links will float to the right of its container, allowing txt and inline elements to wrap around */
+	float: right;
+	/* margin pushes to the right side of the page */
+	margin-right: 25px;
+}
+/* targeting all listed elements inside the class 'nav' */
+ul.nav li{
+	/* whether or not it has a bullet or box */
+	list-style: none;
+	/* displays the list to be right next to each other and not listed down */
+	display: inline-block;
+	/* text centered to the top right side of page */
+	text-align: right;
+	/* pushes text away from each other 5px top, 10px from each other, 0 on the bottom/left*/
+	padding: 5px 10px 0 0;
+	/* aligns the text to be on the bottom */
+	vertical-align: bottom;
+	/* pushes 'nav' elements towards the middle */
+	margin: 5px 5px 0 0;
+	/* changes font to a 13px size */
+	font-size: 13px;
+}
+/* div elements (containers) classified as 'fa' */
+div.fa {
+	font-size: 20px;
+	vertical-align: top;
+	/* opacity determines how transparent an element is */
+	opacity: 0.7;
+	/* specifies which mouse cursor is displayed when hovering over an element */
+	cursor: default;
+} 
+/* div elements of 'fa' that are hovered on */
+div.fa:hover{
+	/* changes transparency of 'fa' icons when you hover */
+	opacity: 1.0;
+}
+/* span (targets specific link) elements classified as 'share' */
+span.share {
+	/* changes box model to the link 'Share' */
+	background-color: #f2f2f2;
+	padding: 7px 15px;
+	cursor: default;
+	/* 'Share' will move up/down along with scrollbar and text on page */
+	position: relative;
+	/* 'Share' link moved up -3px towards the top of page */
+	top: -3px;
+}
+/* span (specific) elements classified as 'Share' that are hovered on */
+span.share:hover {
+	/* changes bg color of only 'Share' */
+	background-color: #e1e1e1;
+}
+/* img elements classified as 'profile_img' */
+img.profile_img {
+	border-radius: 25px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	/* specifies the img in a vertical position */
+	top: 9px;
+}
+
+
+/* middle section - search box */
+/* div (container) elements classified as 'searchbox' */
+div.searchBox {
+	position: absolute;
+	margin-top: 75px;
+	width: 100%;
+}
+/* div element 'searchBox' that have images */
+/* pushes down the searchBox image towards the middle */
+div.searchBox img {
+	padding: 142px 0 24px 0;
+	display: block;
+	margin: 0 auto;
+}
+/* div element 'searchBox' that has an input (box to type in) */
+/* changes how the 'searchBox' looks */
+div.searchBox input {
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+}
+/* input elements that are focused on within div 'searchbox' */
+div.searchBox input:focus {
+		border-color: #f5f5f5;
+}
+/* div classified as 'buttons' */
+/* centers the 'google search' and 'feeling lucky' buttons in middle */
+div.buttons {
+	text-align: center;
+	padding-left: 0;
+}
+/* divs classified as 'buttons' */
+div.buttons button {
+	/* made font smaller, added a background box and color to each button */
+	background-color: #f5f5f5;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	margin: 17px 6px;
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+
+/* bottom section - site links */
+/* div classified as 'bottom' */
+div.bottom {
+	/* moved all of the divs 'bottom' to the bottom of the page */
+	bottom: 0 !important;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+}
+/* ul elements classified as 'left' and 'right' that are inside the div 'bottom' */
+div.bottom ul.left,
+div.bottom ul.right {
+	margin: 0;
+}
+/* ul elements classified as 'left' inside div 'bottom' */
+div.bottom ul.left {
+	float: left;
+	padding-left: 20px;
+}
+/* ul elements classified as 'right' inside div 'bottom' */
+div.bottom ul.right {
+	/*separates the bottom links to opposite sides */
+	float: right;
+	padding-right: 10px;
+}
+/* li elements within div 'bottom' on right and left sides */
+div.bottom ul.left li,
+div.bottom ul.right li {
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+/* divs classified as 'bottom' that targets right listed elements */
+/* 'first child' represents first element among group of elements */
+div.bottom ul.right li a:first-child {
+	padding-right: 8px;
+}
+/* nth-child addresses each element after first link (element) */ 
+div.bottom ul.left li:nth-child(2),
+div.bottom ul.left li:nth-child(3) {
+	margin-left: 7px;
+}
+/* anchor elements inside li elements, inside ul elements, inside divs classified as 'bottom' */
+div.bottom ul.left li a,
+div.bottom ul.right li a {
+	color: #666666;
+	margin: 2px 10px 0;
+	letter-spacing: 0.1px;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+

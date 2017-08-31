@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- en is english -->
+<html lang="en">
+	<head>
+	<!-- link to the favicon img - little g pic - link relationship - href is actual link -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- computer character set -->
+	<meta charset="UTF-8">
+
+	<!-- title on tab when hovering -->
+	<title>Google Replica</title>
+
+	<!-- font awesome - stylesheet is what kind of link you're linking href to -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+	<!-- link to my main.css so it can style the html -->
+	<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!-- TOP RIGHT SECTION with Navigation buttons - unordered list classfiying Navigation -->
+		<ul class="nav">
+			<!-- first list item - anchor href = link - can click on name to get to the link -->
+			<li>
+				<a href="https://www.google.com/">+Chris</a>
+			</li>
+			<li>
+				<!-- link to mail - a href takes you directly to a specific link -->
+				<a href="https://mail.google.com/mail/?tab=wm">Mail</a>
+			</li>
+			<li>
+				<!-- link to images - a href = "link" -->
+				<a href="https://www.google.com/imghp?h1=en&tab=wi&ei=jtezVc6XNcq2ed_doeAL&ved=0CBQQqi4oAQ">Images</a>
+			</li>
+			<li>
+				<!-- div (container) class (specific name) puts in its own section to style in main.css - fa is a favicon img-->
+				<div class="fa fa-th"></div>
+			</li>
+			<li>
+				<!-- second favicon img -->
+				<div class="fa fa-bell-o"></div>
+			</li>
+			<li>
+				<!-- span is targeting only Share b/c it's an inline change -->
+				<span class="share">Share</span>
+			</li>
+			<li>
+				<!-- link to the profile pic - alt specifies an alternate txt for an img - src is source of where you get the profile img from -->
+				<img class="profile_img" src="http://codifyacademy.com/google/img/chris3.jpg" alt="profile picture">
+			</li>
+		<!-- the end of the top navigation buttons -->
+		</ul>
+
+		<!-- MIDDLE SECTION (google logo, search bars) -->
+		<div class="searchBox">
+		<!-- img src leads to the logo img -->	
+			<img src="http://codifyacademy.com/google/img/google.png" alt="google image">
+
+			<!-- input type text allows you to type in the search box -->
+			<input type="text" autofocus placeholder="Search Google or type a URL">
+
+		<div class="buttons">
+			<button>Google Search</button>
+			<button>I'm Feeling Lucky</button>
+		</div>
+		<!-- end of middle section classified as searchbox -->	
+		</div>		
+		<!-- BOTTOM SECTION - site links - div (container) classified as bottom -->
+		<div class="bottom">
+			<!-- bottom left links - unordered list of classified as left -->
+			<ul class="left">
+				<li>
+					<!-- anchored href leads to Advertising link you can click on -->
+					<a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/services/?fg=1">Business</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/intl/en/about.html?fg=1">About</a>
+				</li>
+			</ul>
+			<!-- bottom right links -->
+			<ul class="right">
+				<li>
+					<!-- creates a space between left and right side links -->
+					<a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/preferences?h1=en">Settings</a>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+</html>
